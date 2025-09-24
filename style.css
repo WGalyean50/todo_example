@@ -1,0 +1,160 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Additional base styling for MVP requirements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Screen management */
+.screen {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Input Screen Styling */
+.input-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.input-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.instruction-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.4;
+}
+
+#task-input {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+#task-input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Task Screen Styling */
+.task-container {
+    padding: 20px;
+}
+
+#list-title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#list-title:focus {
+    border-color: blue;
+    outline: none;
+}
+
+#task-list {
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+#add-task-button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+#export-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

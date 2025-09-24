@@ -1,0 +1,6 @@
+Meeting Title: To do app design and feature overview
+Date: Sep 24
+
+Transcript:
+ 
+Speaker A: I want to create a To do list application. When you open the app, when you open the link, you're greeted with a screen that shows just a plain text box, regular text entry box, and above the text entry box it says enter what you need to get done and separate each task by a comma, or separate each task with a comma. Then the user can type into that box whatever it is that they want and then hit Submit. When they click Submit, they're taken to another screen. That's the to do list screen. It allows them to put a title of their to do list and it shows each of the items that they inputted previously listed top to bottom the user. There is a radio button checkbox next to each to do item and there is the ability for the user to click and drag and drop to change the order of the tasks. Also, there is a plus button at the top of the task list where they can click that button that creates a new task at the top of the to do list. Also at the bottom there is an Export as markdown option. When the user clicks that, the to do list is generated into a markdown format and then exported and downloaded to their local machine. The user interface is a white background with sans serif fonts with blue buttons and the app is called Test To Do App. 

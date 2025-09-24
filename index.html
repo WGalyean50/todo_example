@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Input Screen -->
+        <div id="input-screen" class="screen">
+            <div class="input-container">
+                <h1>Test To Do App</h1>
+                <div class="instruction-text">
+                    Enter what you need to get done and separate each task by a comma
+                </div>
+                <textarea id="task-input" placeholder="Task 1, Task 2, Task 3..." maxlength="1000" rows="4"></textarea>
+                <button id="submit-button" type="button">Submit</button>
+            </div>
+        </div>
+
+        <!-- Task List Screen (hidden initially) -->
+        <div id="task-screen" class="screen hidden">
+            <div class="task-container">
+                <input type="text" id="list-title" placeholder="Enter list title..." />
+                <div id="task-list"></div>
+                <button id="add-task-button" type="button">+</button>
+                <button id="export-button" type="button">Export as markdown</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
